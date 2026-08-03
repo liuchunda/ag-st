@@ -11,6 +11,10 @@ import os
 # 从 sentence_transformers 导入 SentenceTransformer
 from sentence_transformers import SentenceTransformer
 model = SentenceTransformer('BAAI/bge-small-zh-v1.5')
+# 默认会下载到本机的 Hugging Face 缓存目录，不是项目目录。
+# /Users/liuchunda/.cache/huggingface/hub/models--BAAI--bge-small-zh-v1.5
+# 因为 SentenceTransformer Hugging Face是目前最常用的「模型超市」——很多开源模型（含 BAAI/bge-small-zh-v1.5）都托管在上面。
+
 import numpy as np
 print(model)
 def consine_similarity(a, b):
