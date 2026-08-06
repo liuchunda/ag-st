@@ -19,3 +19,6 @@ a = [1, 2, 3]
 b = [4, 5, 6]
 euclidean_distance(a, b)
 # print(cosine_similarity(a, b))
+
+
+
