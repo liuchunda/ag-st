@@ -17,10 +17,7 @@ dependencies = [
 
 [tool.uv.workspace]
 members = [
-<<<<<<< Updated upstream
     "langGraphFast",
     "rag_start",
-=======
     "FastAPI",
->>>>>>> Stashed changes
 ]
