@@ -125,7 +125,13 @@ Windows命令行中复制文件可以使用copy命令。
 # 执行文本分割，得到分块结果
 print("开始执行文本分割...")
 documents = semantic_splitter.create_documents(long_text)
-
+# documents=[
+# '今天天气晴朗，适合去公园散步。',
+# '量子力学中的叠加态是描述粒子同时处于多个状态的数学工具。',
+# 'Windows命令行中复制文件可以使用copy命令。',
+# '大熊猫主要以竹子为食，是中国的国宝。',
+# '欧拉公式被誉为“最美的数学公式”。'
+# ]
 # 打印分割结果，显示每个块的内容
 print(f"总共分割为 {len(documents)} 个块:\n")
 for i, doc in enumerate(documents, 1):

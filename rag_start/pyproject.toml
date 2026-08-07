@@ -7,8 +7,11 @@ requires-python = ">=3.12"
 dependencies = [
     "beautifulsoup4>=4.15.0",
     "chromadb>=1.5.9",
+    "langchain-text-splitters>=1.1.2",
     "lxml>=6.1.1",
     "numpy>=1.26.4",
+    "onnxruntime>=1.14.1,<1.24",
+    "openai>=2.53.0",
     "openpyxl>=3.1.5",
     "pymilvus>=3.0.1",
     "pymupdf>=1.28.0",
@@ -17,4 +20,10 @@ dependencies = [
     "rank-bm25>=0.2.2",
     "requests>=2.34.2",
     "sentence-transformers>=3.4.1",
+]
+
+# onnxruntime>=1.24 已不再提供 macOS Intel (x86_64) wheel
+[tool.uv]
+required-environments = [
+    "sys_platform == 'darwin' and platform_machine == 'x86_64'",
 ]

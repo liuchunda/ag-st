@@ -16,5 +16,6 @@ def get_sentence_embedding(doc_content):
 doc_content = "这是一个示例文档"
 # 获取示例文档的嵌入向量
 embedding = get_sentence_embedding(doc_content)
+# embedding = [[-0.01750553 0.02133258 -0.00317198 ... 0.00126641 0.01505076
 # 打印嵌入向量
 print(embedding)
