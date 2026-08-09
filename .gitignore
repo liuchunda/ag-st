@@ -7,6 +7,24 @@ __pycache__/
 *.py[cod]
 *$py.class
 *.pyc
+.venv/
 
 # macOS
 .DS_Store
+
+# Nested git leftovers
+.gitcopy/
+.gitignorecopy
+
+# AgentHarness local runtime / secrets
+AgentHarness/harness/env
+AgentHarness/harness/envs
+.memory/
+.sessions/
+.tasks/
+.mailboxes/
+.mailboxes_backup/
+.transcripts/
+.worktrees/
+.user_memory
+.scheduled_tasks.json
