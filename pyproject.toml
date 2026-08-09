@@ -20,4 +20,5 @@ members = [
     "langGraphFast",
     "rag_start",
     "FastAPI",
+    "harnnes",
 ]
