@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person>
+    <name>张三</name>
+    <age>18</age>
+    <city>北京</city>
+    <hobby>编程</hobby>
+    <score>
+        <math>95</math>
+        <english>88</english>
+        <physics>90</physics>
+    </score>
+</person>
